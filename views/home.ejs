@@ -34,7 +34,7 @@
 
     <%- include('_chat_box') -%>
 </div>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <!-- importing this script for creating the comments -->
 <script src="<%= assetPath('js/home_post_comments.js') %>" ></script>
 <script src="<%= assetPath('js/home_posts.js') %>"></script>
@@ -50,7 +50,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
 <script src="<%= assetPath('js/chat_engine.js') %>"></script>
 <% if (locals.user){ %>
-<script>
+<script type="text/javascript">
     new ChatEngine('user-chat-box', '<%= locals.user.email %>')
 </script>
 <% } %>
