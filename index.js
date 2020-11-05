@@ -52,6 +52,9 @@ app.set('layout extractStyles', true);
 app.set('layout extractScripts', true);
 
 
+// ADD THIS
+var cors = require('cors');
+app.use(cors());
 
 
 // set up the view engine
